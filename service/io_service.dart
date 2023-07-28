@@ -5,6 +5,7 @@ class IoService {
     final translator = GoogleTranslator();
     Translation translated = await translator.translate(input, to: toLanguage);
     print(translated.text);
+    
   }
 
   void writeLn(String text) => stdout.writeln(text);
